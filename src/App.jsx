@@ -6,6 +6,7 @@ import Prizes from './components/Prizes'
 import Sponsors from './components/Sponsors'
 import CallToAction from './components/CallToAction'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Prizes />
       <CallToAction />
       <Footer />
+      <ScrollToTop />
     </div>
   )
 }
