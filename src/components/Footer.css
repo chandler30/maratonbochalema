@@ -25,121 +25,103 @@
   margin-bottom: var(--spacing-xs);
 }
 
-.footer-subtitle {
-  font-size: 1.2rem;
-  color: var(--color-text);
-  font-weight: 600;
-  margin-bottom: var(--spacing-xs);
-}
-
-.footer-text {
-  color: var(--color-text-muted);
-  line-height: 1.6;
-  margin-bottom: var(--spacing-sm);
+.footer-social-section {
+  grid-column: 1 / -1;
+  padding: var(--spacing-lg) 0;
+  margin-bottom: var(--spacing-md);
 }
 
 .social-links {
-  display: flex;
-  gap: var(--spacing-sm);
-  margin-top: var(--spacing-xs);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+  width: 100%;
 }
 
 .social-link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  font-size: 1.5rem;
+  justify-content: space-between;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
   transition: all 0.3s ease;
+  background: transparent;
+  border-radius: 0;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
 
 .social-link:hover {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  transform: translateY(-3px);
+  border-top-color: var(--color-primary);
+  transform: none;
+  box-shadow: none;
+  background: transparent;
 }
 
-.footer-list {
-  list-style: none;
+.social-link-content {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: 4px;
+  align-items: flex-start;
 }
 
-.footer-list li {
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.footer-list li a {
-  color: var(--color-text-muted);
-  transition: color 0.3s ease;
-}
-
-.footer-list li a:hover {
-  color: var(--color-primary);
-}
-
-.sponsors-section {
-  margin-top: var(--spacing-lg);
-  padding-top: var(--spacing-lg);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
-}
-
-.sponsors-title {
-  font-size: 1.5rem;
+.social-platform {
+  font-size: 1.1rem;
   color: var(--color-text);
   font-weight: 600;
-  margin-bottom: var(--spacing-md);
+  text-transform: none;
+  letter-spacing: normal;
 }
 
-.sponsors-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-lg);
+.social-handle {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
 }
 
-.sponsor-item {
+.social-link:hover .social-platform {
+  color: var(--color-text);
+  transform: none;
+}
+
+.social-link:hover .social-handle {
+  color: var(--color-text-muted);
+}
+
+.social-icon-wrapper {
+  width: 40px;
+  height: 40px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: var(--spacing-xs);
-  padding: var(--spacing-sm);
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
   transition: all 0.3s ease;
 }
 
-.sponsor-item:hover {
-  background: rgba(232, 119, 34, 0.1);
-  border-color: var(--color-primary);
-  transform: scale(1.05);
+.social-icon-wrapper::after {
+  display: none;
 }
 
-.sponsor-logo {
-  font-size: 3rem;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
+.social-icon {
+  font-size: 1.2rem;
+  filter: none;
 }
 
-.sponsor-item:hover .sponsor-logo {
-  filter: grayscale(0%);
+.social-link:hover .social-icon-wrapper {
+  background: var(--color-primary);
+  transform: none;
 }
 
-.sponsor-item p {
-  color: var(--color-text-muted);
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-align: center;
+.social-link:hover .social-icon {
+  color: white;
+  transform: none;
+  filter: none;
 }
+
 
 .footer-bottom {
   margin-top: var(--spacing-lg);
@@ -165,14 +147,14 @@
   }
 
   .social-links {
-    justify-content: center;
+    align-items: center;
   }
 
   .footer-list {
     align-items: center;
   }
 
-  .sponsors-grid {
-    grid-template-columns: 1fr;
+  .social-link {
+    justify-content: space-between;
   }
 }

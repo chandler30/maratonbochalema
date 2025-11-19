@@ -5,58 +5,39 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          <div className="footer-section">
+          <div className="footer-section footer-social-section">
             <h3 className="footer-title">Carrera 5K Bochalema</h3>
             <p className="footer-text">
               Un evento deportivo que une a la comunidad de Bochalema
             </p>
             <div className="social-links">
-              <a href="#" className="social-link" aria-label="Facebook">
-                <span>📘</span>
+              <a href="https://facebook.com/carrera5kbochalema" className="social-link social-facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <div className="social-link-content">
+                  <span className="social-platform">Facebook</span>
+                  <span className="social-handle">@carrera5kbochalema</span>
+                </div>
+                <div className="social-icon-wrapper">
+                  <span className="social-icon">📘</span>
+                </div>
               </a>
-              <a href="#" className="social-link" aria-label="Instagram">
-                <span>📷</span>
+              <a href="https://tiktok.com/@carrera5kbochalema" className="social-link social-tiktok" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                <div className="social-link-content">
+                  <span className="social-platform">TikTok</span>
+                  <span className="social-handle">@carrera5kbochalema</span>
+                </div>
+                <div className="social-icon-wrapper">
+                  <span className="social-icon">🎵</span>
+                </div>
               </a>
-              <a href="#" className="social-link" aria-label="Twitter">
-                <span>🐦</span>
+              <a href="https://instagram.com/carrera5kbochalema" className="social-link social-instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <div className="social-link-content">
+                  <span className="social-platform">Instagram</span>
+                  <span className="social-handle">@carrera5kbochalema</span>
+                </div>
+                <div className="social-icon-wrapper">
+                  <span className="social-icon">📷</span>
+                </div>
               </a>
-            </div>
-          </div>
-
-          <div className="footer-section">
-            <h4 className="footer-subtitle">Contacto</h4>
-            <ul className="footer-list">
-              <li>📧 info@carrera5kbochalema.com</li>
-              <li>📱 +57 300 123 4567</li>
-              <li>📍 Bochalema, Norte de Santander</li>
-            </ul>
-          </div>
-
-          <div className="footer-section">
-            <h4 className="footer-subtitle">Información</h4>
-            <ul className="footer-list">
-              <li><a href="#">Reglamento</a></li>
-              <li><a href="#">Preguntas Frecuentes</a></li>
-              <li><a href="#">Términos y Condiciones</a></li>
-              <li><a href="#">Política de Privacidad</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="sponsors-section">
-          <h4 className="sponsors-title">Patrocinadores</h4>
-          <div className="sponsors-grid">
-            <div className="sponsor-item">
-              <div className="sponsor-logo">🏛️</div>
-              <p>Alcaldía de Bochalema</p>
-            </div>
-            <div className="sponsor-item">
-              <div className="sponsor-logo">🏢</div>
-              <p>Gobernación Norte de Santander</p>
-            </div>
-            <div className="sponsor-item">
-              <div className="sponsor-logo">🏃</div>
-              <p>Club Deportivo Bochalema</p>
             </div>
           </div>
         </div>
