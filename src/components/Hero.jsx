@@ -39,7 +39,7 @@ function Hero() {
 
         <div className="hero-date">
           <p className="date-label">¡Nos vemos el!</p>
-          <p className="date-main">7 de Diciembre 2025</p>
+          <p className="date-main">03 de Enero 2026</p>
         </div>
 
         <div className="countdown">
