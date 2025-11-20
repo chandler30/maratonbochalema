@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--color-bg-light) 0%, #ffffff 100%);
+    background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg) 100%);
     padding: var(--spacing-md);
     text-align: center;
     position: relative;
@@ -14,12 +14,12 @@
     max-width: 600px;
     width: 100%;
     padding: var(--spacing-xl);
-    background-color: #ffffff;
+    background-color: var(--color-bg-light);
     border-radius: 24px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
     position: relative;
     z-index: 10;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     animation: slideUp 0.6s ease-out;
 }
 

@@ -13,11 +13,6 @@ function EventKit() {
       description: 'Con chip de cronometraje'
     },
     {
-      icon: '🎫',
-      title: 'Manilla',
-      description: 'Acceso a zonas exclusivas'
-    },
-    {
       icon: '🗺️',
       title: 'Folleto del Recorrido',
       description: 'Mapa detallado y guía'

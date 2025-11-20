@@ -1,16 +1,16 @@
 .event-kit {
-  background-color: #ffffff;
-  color: #333;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   padding: 4rem 0;
 }
 
 .event-kit .section-header h2 {
-  color: #1a1a1a;
+  color: var(--color-text);
   margin-bottom: 1rem;
 }
 
 .event-kit .section-header p {
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 .kit-grid {
@@ -21,12 +21,12 @@
 }
 
 .kit-item {
-  background: #f8f9fa;
+  background: var(--color-bg-light);
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #eee;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .kit-item:hover {
@@ -55,14 +55,14 @@
 }
 
 .kit-title {
-  color: #1a1a1a;
+  color: var(--color-text);
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .kit-description {
-  color: #666;
+  color: var(--color-text-muted);
   font-size: 0.95rem;
   line-height: 1.5;
 }

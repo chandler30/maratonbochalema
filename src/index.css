@@ -3,10 +3,10 @@
 :root {
   --color-primary: hsl(30, 85%, 55%);
   --color-primary-dark: hsl(30, 85%, 45%);
-  --color-bg: #ffffff;
-  --color-bg-light: #f8f9fa;
-  --color-text: #1a1a1a;
-  --color-text-muted: #666666;
+  --color-bg: #111111;
+  --color-bg-light: #1a1a1a;
+  --color-text: #ffffff;
+  --color-text-muted: #a0a0a0;
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;

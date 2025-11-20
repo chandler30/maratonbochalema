@@ -8,7 +8,7 @@ function Sponsors() {
       type: 'Patrocinador Oficial'
     },
     {
-      image: '/CONCEJAL.jpg',
+      image: '/CONCEJAL.png',
       name: 'CRISTIAM VEJAR CONCEJAL ',
       type: 'Patrocinador Oficial'
     }
@@ -32,8 +32,6 @@ function Sponsors() {
                 <div className="sponsor-logo">
                   <img src={sponsor.image} alt={sponsor.name} className="sponsor-image" />
                 </div>
-                <h3 className="sponsor-name">{sponsor.name}</h3>
-                <span className="sponsor-type">{sponsor.type}</span>
               </div>
             ))}
           </div>

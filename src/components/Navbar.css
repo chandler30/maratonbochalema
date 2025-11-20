@@ -1,15 +1,25 @@
 .navbar {
-    background-color: #000000;
-    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1.2rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 1px solid rgba(232, 119, 34, 0);
 }
 
-.navbar-hidden {
-    transform: translateY(-100%);
+.navbar-scrolled {
+    padding: 0.6rem 0;
+    background-color: rgba(0, 0, 0, 0.98);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(232, 119, 34, 0.3);
+}
+
+.navbar-scrolled .navbar-logo img {
+    height: 60px;
 }
 
 .navbar-container {
@@ -22,6 +32,8 @@
     height: 80px;
     width: auto;
     object-fit: contain;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 2px 8px rgba(232, 119, 34, 0.15));
 }
 
 .navbar-menu {
@@ -34,9 +46,28 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+/* Animated underline effect */
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+    transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
 }
 
 .navbar-link:hover {
@@ -67,7 +98,9 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #000000;
+        background-color: rgba(0, 0, 0, 0.98);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         flex-direction: column;
         align-items: center;
         padding: 2rem 0;
@@ -77,6 +110,7 @@
         visibility: hidden;
         transition: all 0.3s ease;
         z-index: -1;
+        border-bottom: 2px solid rgba(232, 119, 34, 0.3);
     }
 
     .navbar-menu.active {

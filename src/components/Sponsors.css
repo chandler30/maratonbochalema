@@ -57,10 +57,10 @@
   justify-content: center;
   gap: var(--spacing-sm);
   min-width: 280px;
-  height: 220px;
+  height: 180px;
   padding: var(--spacing-md);
-  background: #ffffff;
-  border: 1px solid #eee;
+  background: var(--color-bg-light);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   transition: all 0.4s ease;
   position: relative;
@@ -92,7 +92,7 @@
 }
 
 .sponsor-logo {
-  height: 120px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

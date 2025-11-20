@@ -3,20 +3,15 @@ import './Navbar.css'
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
-    const [isVisible, setIsVisible] = useState(true)
-    const [lastScrollY, setLastScrollY] = useState(0)
+    const [isScrolled, setIsScrolled] = useState(false)
 
     useEffect(() => {
         const handleScroll = () => {
-            const currentScrollY = window.scrollY
-
-            if (currentScrollY > lastScrollY && currentScrollY > 50) {
-                setIsVisible(false)
+            if (window.scrollY > 50) {
+                setIsScrolled(true)
             } else {
-                setIsVisible(true)
+                setIsScrolled(false)
             }
-
-            setLastScrollY(currentScrollY)
         }
 
         window.addEventListener('scroll', handleScroll)
@@ -24,7 +19,7 @@ function Navbar() {
         return () => {
             window.removeEventListener('scroll', handleScroll)
         }
-    }, [lastScrollY])
+    }, [])
 
     const toggleMenu = () => {
         setIsOpen(!isOpen)
@@ -49,7 +44,7 @@ function Navbar() {
     }
 
     return (
-        <nav className={`navbar ${!isVisible ? 'navbar-hidden' : ''}`}>
+        <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
             <div className="navbar-container container">
                 <div className="navbar-logo">
                     <img src="/LOGO DE LA ALCALDIA.png" alt="Alcaldía de Bochalema" />
