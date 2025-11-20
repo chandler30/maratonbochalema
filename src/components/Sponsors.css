@@ -44,6 +44,7 @@
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(calc(-50% - var(--spacing-md) / 2));
   }
@@ -58,13 +59,14 @@
   min-width: 280px;
   height: 220px;
   padding: var(--spacing-md);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: #ffffff;
+  border: 1px solid #eee;
   border-radius: 16px;
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .sponsor-card::before {
@@ -85,13 +87,31 @@
 .sponsor-card:hover {
   border-color: var(--color-primary);
   transform: scale(1.05);
-  box-shadow: 0 20px 60px rgba(232, 119, 34, 0.3);
-  background: linear-gradient(135deg, rgba(232, 119, 34, 0.1) 0%, rgba(232, 119, 34, 0.05) 100%);
+  box-shadow: 0 20px 60px rgba(232, 119, 34, 0.15);
+  background: #ffffff;
 }
 
 .sponsor-logo {
-  font-size: 5rem;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-sm);
   transition: all 0.3s ease;
+  width: 100%;
+}
+
+.sponsor-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.sponsor-card:hover .sponsor-image {
+  filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 .sponsor-card:hover .sponsor-logo {

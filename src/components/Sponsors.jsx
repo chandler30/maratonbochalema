@@ -3,49 +3,19 @@ import './Sponsors.css'
 function Sponsors() {
   const sponsors = [
     {
-      logo: '🏛️',
-      name: 'Alcaldía de Bochalema',
-      type: 'Patrocinador Principal'
-    },
-    {
-      logo: '🏢',
-      name: 'Gobernación Norte de Santander',
-      type: 'Patrocinador Principal'
-    },
-    {
-      logo: '🏃',
-      name: 'Club Deportivo Bochalema',
+      image: '/TODOS SOMOS EIMY-01.png',
+      name: 'TODOS SOMOS EIMY SUÁREZ',
       type: 'Patrocinador Oficial'
     },
     {
-      logo: '💪',
-      name: 'Gimnasio Sport Center',
-      type: 'Patrocinador Colaborador'
-    },
-    {
-      logo: '🥤',
-      name: 'Hidratación Plus',
-      type: 'Patrocinador Colaborador'
-    },
-    {
-      logo: '🏥',
-      name: 'Cruz Roja Bochalema',
-      type: 'Patrocinador Colaborador'
-    },
-    {
-      logo: '📸',
-      name: 'Foto Sport',
-      type: 'Patrocinador Colaborador'
-    },
-    {
-      logo: '🎽',
-      name: 'Deportes Extremos',
-      type: 'Patrocinador Colaborador'
+      image: '/CONCEJAL.jpg',
+      name: 'CRISTIAM VEJAR CONCEJAL ',
+      type: 'Patrocinador Oficial'
     }
   ]
 
-  // Duplicate sponsors for infinite scroll effect
-  const allSponsors = [...sponsors, ...sponsors]
+  // Duplicate sponsors for infinite scroll effect (more times since there are fewer items)
+  const allSponsors = [...sponsors, ...sponsors, ...sponsors, ...sponsors, ...sponsors, ...sponsors]
 
   return (
     <section className="sponsors section">
@@ -59,7 +29,9 @@ function Sponsors() {
           <div className="carousel-track">
             {allSponsors.map((sponsor, index) => (
               <div key={index} className="sponsor-card">
-                <div className="sponsor-logo">{sponsor.logo}</div>
+                <div className="sponsor-logo">
+                  <img src={sponsor.image} alt={sponsor.name} className="sponsor-image" />
+                </div>
                 <h3 className="sponsor-name">{sponsor.name}</h3>
                 <span className="sponsor-type">{sponsor.type}</span>
               </div>

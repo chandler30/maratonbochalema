@@ -3,34 +3,44 @@ import './EventKit.css'
 function EventKit() {
   const kitItems = [
     {
-      icon: '👕',
-      title: 'Camiseta',
-      description: 'Camiseta oficial del evento'
+      image: '/CAMISETA POR DETALNTE Y POR DETRAS.jpg',
+      title: 'Camiseta Oficial',
+      description: 'Diseño exclusivo, tela tecnológica'
     },
     {
-      icon: '🏅',
-      title: 'Medalla',
-      description: 'Medalla de finalización'
+      icon: '123',
+      title: 'Número de Competidor',
+      description: 'Con chip de cronometraje'
     },
     {
-      icon: '🎽',
-      title: 'Número',
-      description: 'Número de competidor'
+      icon: '🎫',
+      title: 'Manilla',
+      description: 'Acceso a zonas exclusivas'
     },
     {
-      icon: '📦',
+      icon: '🗺️',
+      title: 'Folleto del Recorrido',
+      description: 'Mapa detallado y guía'
+    },
+    {
+      image: '/TULA.jpg',
+      title: 'Tula Deportiva',
+      description: 'Para guardar tus pertenencias'
+    },
+    {
+      image: '/MEDALLA.jpg',
+      title: 'Medalla Finisher',
+      description: 'Para todos los que crucen la meta'
+    },
+    {
+      image: '/GORRA.jpg',
+      title: 'Gorra Oficial',
+      description: 'Protección y estilo'
+    },
+    {
+      image: '/KIT COMPLETO.jpg',
       title: 'Kit Completo',
-      description: 'Kit de bienvenida'
-    },
-    {
-      icon: '💧',
-      title: 'Hidratación',
-      description: 'Puntos de hidratación en ruta'
-    },
-    {
-      icon: '🎉',
-      title: 'Evento Post-Carrera',
-      description: 'Actividades y premios'
+      description: 'Todo lo que necesitas para la carrera'
     }
   ]
 
@@ -45,7 +55,13 @@ function EventKit() {
         <div className="kit-grid">
           {kitItems.map((item, index) => (
             <div key={index} className="kit-item">
-              <div className="kit-icon">{item.icon}</div>
+              <div className="kit-icon">
+                {item.image ? (
+                  <img src={item.image} alt={item.title} className="kit-image" />
+                ) : (
+                  <span className="emoji-icon">{item.icon}</span>
+                )}
+              </div>
               <h3 className="kit-title">{item.title}</h3>
               <p className="kit-description">{item.description}</p>
             </div>

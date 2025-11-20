@@ -2,7 +2,7 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer id="contacto" className="footer">
       <div className="container">
         <div className="footer-content">
           <div className="footer-section footer-social-section">
@@ -11,7 +11,7 @@ function Footer() {
               Un evento deportivo que une a la comunidad de Bochalema
             </p>
             <div className="social-links">
-              <a href="https://facebook.com/carrera5kbochalema" className="social-link social-facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/share/1H5TvuEfiR/?mibextid=wwXIfr" className="social-link social-facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                 <div className="social-link-content">
                   <span className="social-platform">Facebook</span>
                   <span className="social-handle">@carrera5kbochalema</span>
@@ -22,21 +22,10 @@ function Footer() {
                   </svg>
                 </div>
               </a>
-              <a href="https://tiktok.com/@carrera5kbochalema" className="social-link social-tiktok" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-                <div className="social-link-content">
-                  <span className="social-platform">TikTok</span>
-                  <span className="social-handle">@carrera5kbochalema</span>
-                </div>
-                <div className="social-icon-wrapper">
-                  <svg className="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93v6.16c0 3.18-1.34 4.81-3.17 5.49-1.14.42-2.42.53-3.64.28-1.57-.33-2.92-1.23-3.81-2.58-.89-1.35-1.21-2.98-.83-4.56.39-1.56 1.36-2.97 2.74-3.83 1.4-.86 3.08-1.11 4.67-.63.09.02.18.05.27.08v4.01c-.94-.65-2.26-.62-3.12.1-.86.72-1.05 2.03-.46 2.98.6.96 1.96 1.32 2.96.78.62-.34 1.02-1.01 1.02-1.73v-14.5c-1.32-.01-2.63 0-3.94-.01z" />
-                  </svg>
-                </div>
-              </a>
-              <a href="https://instagram.com/carrera5kbochalema" className="social-link social-instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/runningbch2026?igsh=cHJobXQ1ZW5ncDFw" className="social-link social-instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                 <div className="social-link-content">
                   <span className="social-platform">Instagram</span>
-                  <span className="social-handle">@carrera5kbochalema</span>
+                  <span className="social-handle">@runningbch2026</span>
                 </div>
                 <div className="social-icon-wrapper">
                   <svg className="social-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
