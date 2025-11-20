@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './Hero.css'
 
 function Hero() {
-  const eventDate = new Date('2025-12-07T07:00:00')
+  const eventDate = new Date('2026-01-03T07:00:00')
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
 
   function calculateTimeLeft() {
@@ -39,7 +39,7 @@ function Hero() {
 
         <div className="hero-date">
           <p className="date-label">¡Nos vemos el!</p>
-          <p className="date-main">7 de Diciembre 2025</p>
+          <p className="date-main">3 de Enero 2026</p>
         </div>
 
         <div className="countdown">
