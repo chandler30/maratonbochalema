@@ -57,7 +57,7 @@ function Navbar() {
 
                 <div className={`navbar-menu ${isOpen ? 'active' : ''}`}>
                     <a href="#inicio" className="navbar-link" onClick={(e) => scrollToSection(e, 'inicio')}>Inicio</a>
-                    <a href="#" className="navbar-link" onClick={() => setIsOpen(false)}>Inscríbete</a>
+                    <a href="https://forms.gle/AY4Dvqv2JSAv2RTc6" className="navbar-link" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>Inscríbete</a>
                     <a href="#recorrido" className="navbar-link" onClick={(e) => scrollToSection(e, 'recorrido')}>Recorrido</a>
                     <a href="#premios" className="navbar-link" onClick={(e) => scrollToSection(e, 'premios')}>Premios</a>
                     <a href="#contacto" className="navbar-link" onClick={(e) => scrollToSection(e, 'contacto')}>Contacto</a>

@@ -64,7 +64,7 @@ function Hero() {
           </div>
         </div>
 
-        <button className="btn-primary hero-cta">Inscríbete Ahora</button>
+        <a href="https://forms.gle/AY4Dvqv2JSAv2RTc6" className="btn-primary hero-cta" target="_blank" rel="noopener noreferrer">Inscríbete Ahora</a>
       </div>
     </section>
   )

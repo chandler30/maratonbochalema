@@ -10,9 +10,9 @@ function CallToAction() {
                         <br />
                         <span className="cta-light">tu mejor</span> <span className="cta-bold">marca?</span>
                     </h2>
-                    <button className="cta-button">
+                    <a href="https://forms.gle/AY4Dvqv2JSAv2RTc6" className="cta-button" target="_blank" rel="noopener noreferrer">
                         a Correr!
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
