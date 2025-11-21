@@ -30,7 +30,7 @@ function Prizes() {
 
         <div className="prizes-grid">
           <div className="prize-category">
-            <h3 className="category-title"></h3>
+            <h3 className="category-title">Hombres</h3>
             <div className="prize-list">
               <div className="prize-item">
                 <div className="prize-medal">🥇</div>
