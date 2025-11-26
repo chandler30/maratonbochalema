@@ -22,8 +22,8 @@
 .carousel-container {
   position: relative;
   margin-top: var(--spacing-lg);
-  overflow-x: hidden;
-  /* Ocultamos la barra pero permitimos scroll via JS */
+  overflow-x: auto;
+  /* Permitimos scroll nativo para tactil/trackpad */
   width: 100%;
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
@@ -31,6 +31,15 @@
   /* Indicamos que es arrastrable */
   user-select: none;
   /* Evitamos selección de texto al arrastrar */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE/Edge */
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+  /* Chrome/Safari/Opera */
 }
 
 .carousel-container:active {
