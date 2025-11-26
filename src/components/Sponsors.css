@@ -22,10 +22,19 @@
 .carousel-container {
   position: relative;
   margin-top: var(--spacing-lg);
-  overflow: hidden;
+  overflow-x: hidden;
+  /* Ocultamos la barra pero permitimos scroll via JS */
   width: 100%;
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  cursor: grab;
+  /* Indicamos que es arrastrable */
+  user-select: none;
+  /* Evitamos selección de texto al arrastrar */
+}
+
+.carousel-container:active {
+  cursor: grabbing;
 }
 
 .carousel-track {
@@ -33,21 +42,7 @@
   gap: var(--spacing-md);
   padding: var(--spacing-md) 0;
   width: max-content;
-  animation: scroll 40s linear infinite;
-}
-
-.carousel-track:hover {
-  animation-play-state: paused;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(calc(-50% - var(--spacing-md) / 2));
-  }
+  /* Eliminada la animación CSS pura */
 }
 
 .sponsor-card {
@@ -88,7 +83,6 @@
   border-color: var(--color-primary);
   transform: scale(1.05);
   box-shadow: 0 20px 60px rgba(232, 119, 34, 0.15);
-  background: #ffffff;
 }
 
 .sponsor-logo {
