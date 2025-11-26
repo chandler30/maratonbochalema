@@ -33,8 +33,7 @@ function Hero() {
       <div className="hero-overlay"></div>
       <div className="hero-content container">
         <div className="hero-logo">
-          <h1>RUNNING</h1>
-          <h2>BOCHALEMA</h2>
+          <img src="/LOGO.webp" alt="Running Bochalema Logo" className="hero-logo-img" />
         </div>
 
         <div className="hero-date">

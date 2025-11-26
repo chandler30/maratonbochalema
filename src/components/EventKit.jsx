@@ -25,7 +25,17 @@ function EventKit() {
                 <li key={index}>{item}</li>
               ))}
             </ul>
-            <button className="kit-cta">Inscripciones muy pronto</button>
+            <div className="kit-cta-wrapper">
+              <a
+                href="https://forms.gle/AY4Dvqv2JSAv2RTc6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary hero-cta"
+              >
+                Inscríbete ahora
+              </a>
+            </div>
+
           </div>
 
           <div className="kit-image-container">
@@ -42,4 +52,3 @@ function EventKit() {
 }
 
 export default EventKit
-

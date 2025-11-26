@@ -30,27 +30,24 @@ function Prizes() {
 
         <div className="prizes-grid">
           <div className="prize-category">
-            <h3 className="category-title"></h3>
+            <h3 className="category-title">Hombres</h3>
             <div className="prize-list">
               <div className="prize-item">
                 <div className="prize-medal">🥇</div>
                 <div className="prize-details">
                   <span className="prize-place">1er Lugar</span>
-                  <span className="prize-amount">$300.000</span>
                 </div>
               </div>
               <div className="prize-item">
                 <div className="prize-medal">🥈</div>
                 <div className="prize-details">
                   <span className="prize-place">2do Lugar</span>
-                  <span className="prize-amount">$200.000</span>
                 </div>
               </div>
               <div className="prize-item">
                 <div className="prize-medal">🥉</div>
                 <div className="prize-details">
                   <span className="prize-place">3er Lugar</span>
-                  <span className="prize-amount">$100.000</span>
                 </div>
               </div>
             </div>
@@ -63,21 +60,18 @@ function Prizes() {
                 <div className="prize-medal">🥇</div>
                 <div className="prize-details">
                   <span className="prize-place">1er Lugar</span>
-                  <span className="prize-amount">$300.000</span>
                 </div>
               </div>
               <div className="prize-item">
                 <div className="prize-medal">🥈</div>
                 <div className="prize-details">
                   <span className="prize-place">2do Lugar</span>
-                  <span className="prize-amount">$200.000</span>
                 </div>
               </div>
               <div className="prize-item">
                 <div className="prize-medal">🥉</div>
                 <div className="prize-details">
                   <span className="prize-place">3er Lugar</span>
-                  <span className="prize-amount">$100.000</span>
                 </div>
               </div>
             </div>
