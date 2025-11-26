@@ -11,6 +11,11 @@ function Sponsors() {
       image: '/CONCEJAL.png',
       name: 'CRISTIAM VEJAR CONCEJAL ',
       type: 'Patrocinador Oficial'
+    },
+    {
+      image: '/ALCALDIA.png',
+      name: 'ALCALDIA DE BOCHALEMA',
+      type: 'Patrocinador Oficial'
     }
   ]
 

@@ -33,7 +33,7 @@ function Hero() {
       <div className="hero-overlay"></div>
       <div className="hero-content container">
         <div className="hero-logo">
-          <h1>CARRERA 5K</h1>
+          <h1>RUNNING</h1>
           <h2>BOCHALEMA</h2>
         </div>
 
