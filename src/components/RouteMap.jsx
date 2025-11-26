@@ -11,14 +11,14 @@ function RouteMap() {
     <section id="recorrido" className="route-map section">
       <div className="container">
         <div className="section-header">
-          <h2>Mapa del Recorrido</h2>
+          <h2>Mapa del recorrido</h2>
           <p>5 kilómetros por las calles de Bochalema</p>
         </div>
 
         <div className="route-content">
           <div className="route-map-container">
             <div className="map-image-wrapper" onClick={openModal}>
-              <img src="/MAPA DE RECORRIDO.jpg" alt="Mapa del Recorrido" className="map-image" />
+              <img src="/MAPA-DE-RECORRIDO.webp" alt="Mapa del Recorrido" className="map-image" />
               <div className="map-overlay-hint">
                 <span>🔍 Ver mapa completo</span>
               </div>
@@ -29,7 +29,7 @@ function RouteMap() {
             <div className="info-card">
               <div className="info-icon">📍</div>
               <div className="info-text">
-                <h3>Punto de Salida</h3>
+                <h3>Punto de salida</h3>
                 <p>Entrada a Bochalema, vía nacional</p>
               </div>
             </div>
@@ -37,7 +37,7 @@ function RouteMap() {
             <div className="info-card">
               <div className="info-icon">🏁</div>
               <div className="info-text">
-                <h3>Punto de Llegada</h3>
+                <h3>Punto de llegada</h3>
                 <p>Frente a la alcaldía y parque principal</p>
               </div>
             </div>
@@ -45,7 +45,7 @@ function RouteMap() {
             <div className="info-card">
               <div className="info-icon">🕐</div>
               <div className="info-text">
-                <h3>Hora de Inicio</h3>
+                <h3>Hora de inicio</h3>
                 <p>6:00 AM</p>
               </div>
             </div>
@@ -69,10 +69,7 @@ function RouteMap() {
             <span className="feature-icon">🚑</span>
             <p>Asistencia médica en ruta</p>
           </div>
-          <div className="feature-item">
-            <span className="feature-icon">⏱️</span>
-            <p>Cronometraje oficial</p>
-          </div>
+
           <div className="feature-item">
             <span className="feature-icon">📸</span>
             <p>Fotografía profesional</p>

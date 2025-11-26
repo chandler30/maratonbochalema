@@ -6,7 +6,8 @@ function EventKit() {
     'Dorsal',
     'Medalla',
     'Tula',
-    'Visera'
+    'Visera',
+    'Hidratación'
   ]
 
   return (
@@ -29,7 +30,7 @@ function EventKit() {
 
           <div className="kit-image-container">
             <img
-              src="/PRONTO.png"
+              src="/PRONTO.webp"
               alt="Pronto estará listo nuestro kit de competencia"
               className="kit-pronto-image"
             />

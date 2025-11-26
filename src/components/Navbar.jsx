@@ -47,7 +47,7 @@ function Navbar() {
         <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
             <div className="navbar-container container">
                 <div className="navbar-logo">
-                    <img src="/ALCALDIA.png" alt="Alcaldía de Bochalema" />
+                    <img src="/LOGO.webp" alt="Alcaldía de Bochalema" />
                 </div>
 
                 <div className={`navbar-menu ${isOpen ? 'active' : ''}`}>

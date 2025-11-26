@@ -6,7 +6,7 @@ function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section footer-social-section">
-            <h3 className="footer-title">Carrera 5K Bochalema</h3>
+            <h3 className="footer-title">Running Bochalema 2026</h3>
             <p className="footer-text">
               Un evento deportivo que une a la comunidad de Bochalema
             </p>
@@ -38,7 +38,7 @@ function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2025 Carrera 5K Bochalema. Todos los derechos reservados.</p>
+          <p>&copy; Running Bochalema 2026. Todos los derechos reservados.</p>
           <p className="footer-location">Bochalema, Norte de Santander, Colombia</p>
         </div>
       </div>

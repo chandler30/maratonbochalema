@@ -3,17 +3,17 @@ import './Sponsors.css'
 function Sponsors() {
   const sponsors = [
     {
-      image: '/TODOS SOMOS EIMY-01.png',
+      image: '/TODOS-SOMOS-EIMY-01.webp',
       name: 'TODOS SOMOS EIMY SUÁREZ',
       type: 'Patrocinador Oficial'
     },
     {
-      image: '/CONCEJAL.png',
+      image: '/CONCEJAL.webp',
       name: 'CRISTIAM VEJAR CONCEJAL ',
       type: 'Patrocinador Oficial'
     },
     {
-      image: '/ALCALDIA.png',
+      image: '/ALCALDIA.webp',
       name: 'ALCALDIA DE BOCHALEMA',
       type: 'Patrocinador Oficial'
     }
@@ -26,7 +26,7 @@ function Sponsors() {
     <section className="sponsors section">
       <div className="container">
         <div className="sponsors-header">
-          <h2>Nuestros Patrocinadores</h2>
+          <h2>Nuestros patrocinadores</h2>
           <p>Gracias a quienes hacen posible este evento</p>
         </div>
 
