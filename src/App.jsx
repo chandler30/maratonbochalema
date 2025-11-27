@@ -9,6 +9,7 @@ import CallToAction from './components/CallToAction'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import ThankYou from './components/ThankYou'
+import WhatsAppButton from './components/WhatsAppButton'
 
 function App() {
   // Simple routing based on pathname
@@ -29,6 +30,7 @@ function App() {
       <CallToAction />
       <Footer />
       <ScrollToTop />
+      <WhatsAppButton />
     </div>
   )
 }

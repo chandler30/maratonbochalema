@@ -80,7 +80,7 @@ function RouteMap() {
           <div className="map-modal-overlay" onClick={closeModal}>
             <div className="map-modal-content" onClick={e => e.stopPropagation()}>
               <button className="map-modal-close" onClick={closeModal}>&times;</button>
-              <img src="/MAPA DE RECORRIDO.jpg" alt="Mapa del Recorrido Grande" />
+              <img src="/MAPA-DE-RECORRIDO.webp" alt="Mapa del Recorrido Grande" />
             </div>
           </div>
         )}
